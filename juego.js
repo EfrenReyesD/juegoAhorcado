@@ -148,7 +148,7 @@ function iniciar_Juego(){
     letras_tecladas=[''];
     contenido_letras_tecladas.innerHTML='';
     contendor_span.innerHTML='';
-
+    contenedor_inicio.focus();
     const valor_ramdom=valor_al_azar(palabras);
     palabra = palabras[valor_ramdom];
     const can_letras = palabra.length;
