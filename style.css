@@ -1,0 +1,251 @@
+body{
+    
+    
+    background-image: url("images/background2.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+.logo{
+    width: 1024;
+    height: 50px; 
+}
+
+.logo img{
+    padding-top: 20px;
+}
+main{
+    width: 1024px;
+    height:650px;
+    margin: 50px auto;
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 1.5px );
+    -webkit-backdrop-filter: blur( 1.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    
+}
+
+.glass-contenedores{
+    width: 1024px;
+    height:600px;
+    margin: 0px auto;
+}
+
+/*Style para contendor de la pagina de inicio*/
+.contenedor-pag-inicio{
+    display: block;  
+    position: fixed;  
+}
+.btns-inicio{
+    width: 200px;
+    height: 50px;
+    display: block;
+    font-weight: bold;
+    font-size: 1.01em;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 1.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+#btn-iniciar-juego{
+    margin: 200px auto 0px auto; 
+    background: none;
+}
+#btn-agregar-palabra{
+    margin: 20px auto 0px auto;
+    background-color: rgba( 255, 255, 255, 0.4 );
+}
+
+
+.btns-inicio:hover{
+  scale: 1.05;
+}
+
+/*Style para contendor de la pagina de AGREGAR PALABRA*/
+.contenedor-agregar-palabra{
+    display: none;
+    position: fixed; 
+    text-align: center;
+}
+
+.text-new-palabra{
+    width: 60%;
+    height: 40px;
+    background: none;
+    font-size: 20px;
+    margin-top: 100px;
+    border: none;
+    resize: none;
+    outline: none;
+}
+
+#p-advertencia{
+    font-weight: bold;
+    font-size: 14px;
+    margin: 280px 500px 0px 0px;
+}
+.btns-agregar-palabra{
+    width: 250px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 1.01em;
+    color: #000;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 1.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    margin-top: 10px;
+}
+
+#btn-guardar-palabra{
+    margin-right: 120px;
+    background: none;
+}
+
+
+
+#cancelar-guardar-palabra{
+    background-color: rgba( 255, 255, 255, 0.4 );
+}
+.btns-agregar-palabra:hover{
+    scale: 1.05;
+}
+
+/*Style para contendor de la pagina de JUGAR*/
+.contenedor-jugar{
+    display: none;
+    text-align: center;
+}
+
+.contenedor-jugar img{
+    width: 254px;
+    height: 320px;
+    margin-top: 10px;  
+}
+
+#mensaje-ganaste-perdiste{
+    display: flex;
+    font-size: 30px;
+    width: 200px;
+    height: 32px;
+    position: absolute;
+    top: 200px;
+    right: 39%;
+}
+
+#text-advertencia-letras-minusculas{
+    color: gray;
+}
+.palabra_a_adivinar{
+    width: 70%;
+    height: 43px;
+    margin: 10px auto 0px auto;
+     
+}
+
+.palabra_a_adivinar span{
+    vertical-align: bottom;
+    font-size: 2.5em;
+    color: darkblue;
+    border-bottom: 2.3px solid darkblue;
+    width: 25px;
+    text-align: center;
+    margin-right: 4px;
+    display: inline-block;
+    
+}
+
+.letras-tecleadas{
+    height: 20px;
+    font-size: 1.18em;
+    margin: 20px auto;
+}
+
+.btns-jugar{
+    width: 250px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 1.02em;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 1.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    margin-top: 60px;
+}
+
+#btn-nuevo-juego{
+    background: none;
+    margin-right: 40px;
+}
+
+#btn-desistir{
+background-color: rgba( 255, 255, 255, 0.4 );
+}
+
+.btns-jugar:hover{
+    scale: 1.02;
+}
+
+/*Configuraciones para vista en tableta*/
+@media screen and (min-width:768px) and (max-width:1023px) {
+    main{
+        width: 750px;
+    }
+    .glass-contenedores{
+        width: 700px;
+        scale: 0.9;
+    }
+    #mensaje-ganaste-perdiste{
+        right: 35%;
+    }
+    /*Ajustes para agregar palabra*/
+    .text-new-palabra{
+        width: 80%;
+    }
+    #btn-guardar-palabra{
+        margin: 0px px 20px 0px;
+    }
+
+    
+}
+
+/*Configuraciones para vista en tel movil*/
+@media screen and (max-width: 767px) {
+    main{
+        width: 470px;
+    }
+    .glass-contenedores{
+        width: 470px;
+        scale: 0.8;
+        text-align: center;
+    }
+    /*Ajustes para agregar palabra*/
+    .text-new-palabra{
+        width: 80%;
+        margin-top: 40px;
+    }
+    #p-advertencia{
+        margin: 280px 120px 10px 0px ;
+        color: #000;
+    }
+    #btn-guardar-palabra{
+        margin: 0px 0px 20px 0px;
+    }
+    
+    /*Ajustes para contendor jugar*/
+    .palabra_a_adivinar{
+        width: 100%;
+    }
+    #mensaje-ganaste-perdiste{
+        top: -30px;
+        right: 23%;
+    }
+    #btn-nuevo-juego{
+        margin: 30px 0px 0px 0px;
+    }
+    #btn-desistir{
+        margin: 10px 0px;
+    }
+
+}

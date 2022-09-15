@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Juego del Ahorcado</title>
+</head>
+<body>
+    <main>
+        <div class="logo">
+            <img src="images/Logo.png" alt="Logo-Alura">
+        </div> 
+
+        <div class="contenedor-pag-inicio glass-contenedores" id="contenedor-inicio">
+            <button class="btns-inicio" id="btn-iniciar-juego" >Iniciar juego</button>
+            <button class="btns-inicio"id="btn-agregar-palabra" >Agregar nueva palabra</button>
+        </div>
+
+        <div class="contenedor-agregar-palabra glass-contenedores" id="contenedor-agregar-palabra">
+            <textarea class="text-new-palabra" name="new-palabra" id="new-palabra" cols="30" rows="10" placeholder="Ingrese una palabra"></textarea>
+            <p id="p-advertencia">⚠ Máx de 8 letras</p>
+            <button class="btns-agregar-palabra" id="btn-guardar-palabra">Guardar y empezar</button>
+            <button class="btns-agregar-palabra" id="cancelar-guardar-palabra">Cancelar</button>
+        </div>
+
+        <div class="contenedor-jugar glass-contenedores" id="contenedor-jugar">
+            <img id="imagen-ahorcado" src="images/imagen0.png" alt="ahorcado">
+            <div id="mensaje-ganaste-perdiste">
+            </div>
+            <p id="text-advertencia-letras-minusculas">Solo letras minúsculas</p>
+            <p class="palabra_a_adivinar" id="contenedor_span">
+                
+            </p>
+            <p class="letras-tecleadas" id="letras-tecleadas">
+               
+            </p>
+            <button class="btns-jugar" id="btn-nuevo-juego">Nuevo Juego</button>
+            <button class="btns-jugar" id="btn-desistir">Desistir</button>
+            
+        </div>
+        
+    </main>
+    <script src="juego.js"></script>
+</body>
+</html>
