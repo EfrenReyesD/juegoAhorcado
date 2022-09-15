@@ -213,10 +213,10 @@ background-color: rgba( 255, 255, 255, 0.4 );
 /*Configuraciones para vista en tel movil*/
 @media screen and (max-width: 767px) {
     main{
-        width: 470px;
+        width: 320px;
     }
     .glass-contenedores{
-        width: 470px;
+        width: 300px;
         scale: 0.8;
         text-align: center;
     }
